@@ -1,0 +1,11 @@
+/* purgecss start ignore */
+@import 'tailwindcss/base';
+
+h1 {
+    color: red;
+}
+
+@import 'tailwindcss/components';
+/* purgecss end ignore */
+@import 'tailwindcss/utilities';
+
