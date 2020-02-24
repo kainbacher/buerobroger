@@ -1,5 +1,10 @@
 <template>
   <div>
+    <div class="container mx-auto flex flex-wrap justify-end overflow-hidden">
+      <div class="w-full overflow-hidden">
+        <img src="~/assets/images/schreibtisch.jpg" alt="Alexandra Broger" />
+      </div>
+    </div>
     <div class="container mt-64 mb-64 mx-auto">
       <div class="w-1/2 mx-auto">
         <h1 class="pb-5">
@@ -86,11 +91,6 @@
           Kommen auch Sie auf einen Kaffee und ein gutes Gespräch. Ich freue
           mich.
         </p>
-      </div>
-    </div>
-    <div class="container mx-auto flex flex-wrap justify-end overflow-hidden">
-      <div class="w-full overflow-hidden">
-        <img src="~/assets/images/schreibtisch.jpg" alt="Alexandra Broger" />
       </div>
     </div>
   </div>

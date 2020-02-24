@@ -1,11 +1,21 @@
 /* purgecss start ignore */
 @import 'tailwindcss/base';
-
-h1 {
-    color: red;
-}
-
 @import 'tailwindcss/components';
 /* purgecss end ignore */
 @import 'tailwindcss/utilities';
 
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 1.2em;
+}
