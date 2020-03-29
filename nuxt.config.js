@@ -1,7 +1,7 @@
 export default {
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
     titleTemplate: '%s | buerobroger',
     htmlAttrs: { lang: 'en' },
@@ -11,39 +11,41 @@ export default {
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap'
+      }
     ]
   },
 
   /*
-  ** Load nuxt modules
-  */
+   ** Load nuxt modules
+   */
   modules: [],
 
   /*
-  ** Load nuxt build-modules
-  */
-  buildModules: [
-    '@nuxtjs/eslint-module',
-    '@nuxtjs/tailwindcss'
-  ],
+   ** Load nuxt build-modules
+   */
+  buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/tailwindcss'],
 
   /*
-  ** This option is given directly to the vue-router Router constructor
-  */
+   ** This option is given directly to the vue-router Router constructor
+   */
   router: {
     base: '',
     linkActiveClass: 'is-active'
   },
 
   /*
-  ** Customize the progress bar color
-  */
+   ** Customize the progress bar color
+   */
   loading: { color: '#3B8070' },
 
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   build: {
     /*
      ** PostCSS setup
@@ -68,8 +70,8 @@ export default {
     },
 
     /*
-    ** Run ESLint on save
-    */
-    extend(config, ctx) { }
+     ** Run ESLint on save
+     */
+    extend(config, ctx) {}
   }
 }

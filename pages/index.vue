@@ -1,21 +1,39 @@
 <template>
-  <div class="container mt-64 mb-64 mx-auto">
-    <div class="w-1/2 mx-auto">
-      <h1>
-        Das BÜRO BROGER bietet seinem Kundenkreis aus Handel und Industrie,
-        Wirtschaft, Medien und Kultur ein breites Leistungsspektrum an
-        Kommunikationsdesign und Gestaltung.
-      </h1>
-    </div>
-  </div>
+  <main>
+    <top-element
+      image="/startseite.jpg"
+      text="Das BÜRO BROGER bietet seinem Kundenkreis aus Handel und
+        Industrie, Wirtschaft, Medien und Kultur ein breites
+        Leistungsspektrum an Kommunikationsdesign und Gestaltung."
+    />
+    <statement
+      text="Wann ich meine Arbeit als Gestalterin als gelungen betrachte? Wenn ich von meinen KundInnen höre, dass sie es sich genau so vorgestellt haben."
+    />
+    <project-list amount="8" />
+  </main>
 </template>
 
 <script>
+import ProjectList from '~/components/ProjectList.vue'
+import Statement from '~/components/Statement.vue'
+import TopElement from '~/components/TopElement.vue'
+
 export default {
+  components: {
+    ProjectList,
+    Statement,
+    TopElement
+  },
   head() {
     return {
-      title: 'Welcome',
-      meta: [{ hid: 'description', name: 'description', content: 'Welcome' }]
+      title: 'Büro Broger, Grafik, Design, Layout',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Büro Broger, Grafik, Design, Layout'
+        }
+      ]
     }
   }
 }

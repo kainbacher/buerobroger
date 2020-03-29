@@ -1,96 +1,67 @@
 <template>
   <div>
-    <div class="container mt-64 mb-64 mx-auto">
-      <div class="md:w-1/2 mx-auto">
-        <h1>
-          Die kreative Welt ist faszinierend, aufregend und vielseitig – gerade
-          in der heutigen Zeit, in der der Mix aus analog und digital das ganze
-          noch spannender macht. Das kreative Spiel mit Formen, Farben und
-          Materialien und Wiedergabegeräten macht es aufregend – fordert die
-          Kreativität.
-        </h1>
-        <h2>
-          „Wann ich meine Arbeit als Gestalterin als gelungen betrachte? Wenn
-          ich von meinen KundInnen höre, dass sie es sich genau so vorgestellt
-          haben.“
-        </h2>
-      </div>
-    </div>
-    <div class="container mt-64 mb-24 mx-auto flex">
-      <div class="overflow-hidden md:px-3 md:w-1/3">
-        <h2>Corporate Design</h2>
-        <h3>Weil der erste Eindruck zählt und bleibt.</h3>
-        <p>
-          Ein unverwechselbares Design – das ist die Visiten- und
-          Eintrittskarte. Es macht Sie als Unternehmen und auch Person
-          einzigartig.
-        </p>
-      </div>
-      <div class="overflow-hidden md:px-3 md:w-1/3">
-        <h2>Verpackungs Design</h2>
-        <h3>Weil Verpackungen wie Geschenke wirken.</h3>
-        <p>
-          In ansprechenden, außergewöhnlichen, stilvollen, witzigen und
+    <top-element
+      image="/leistungen.jpg"
+      text="Die kreative Welt ist faszinierend, aufregend und vielseitig –
+      gerade in der heutigen Zeit, in der der Mix aus analog und digital
+      das ganze noch spannender macht. Das kreative Spiel mit Formen,
+      Farben und Materialien und Wiedergabegeräten macht es aufregend –
+      fordert die Kreativität."
+      text-color="text-white"
+    />
+
+    <div
+      class="container mx-auto flex grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+    >
+      <service-item
+        title="Corporate Design"
+        subtitle="Weil der erste Eindruck zählt und bleibt."
+        text="Ein unverwechselbares Design – das ist die Visiten- und Eintrittskarte. Es macht Sie als Unternehmen und auch Person einzigartig."
+      />
+      <service-item
+        title="Verpackungs Design"
+        subtitle="Weil Verpackungen wie Geschenke wirken."
+        text="In ansprechenden, außergewöhnlichen, stilvollen, witzigen und
           passenden Verpackungen liegt das Potential der raschen
           Kaufentscheidung. Diese treffen Ihre KundInnen nämlich innerhalb
           weniger Sekunden. Das Plus: Sie haben selbst die doppelte Freude an
-          Ihrem Produkt.
-        </p>
-      </div>
-      <div class="overflow-hidden md:px-3 md:w-1/3">
-        <h2>Katalog- & Broschürengestaltung</h2>
-
-        <h3>
-          Weil selbst im digitalen Zeitalter Kataloge und Broschüren unablässig
-          sind.
-        </h3>
-        <p>
-          Etwas aus Papier in der Hand zu halten, das hat für Kunden einen hohen
+          Ihrem Produkt."
+      />
+      <service-item
+        title="Katalog- & Broschürengestaltung"
+        subtitle="Weil selbst im digitalen Zeitalter Kataloge und Broschüren unablässig sind."
+        text="Etwas aus Papier in der Hand zu halten, das hat für Kunden einen hohen
           Wert. Auch in Zeiten des Internets informieren sie sich vor dem Kauf
-          gern mittels Print-Katalogen, Broschüren oder Flyern.
-        </p>
-      </div>
-    </div>
-    <div class="container mb-64 mx-auto flex">
-      <div class="overflow-hidden md:px-3 md:w-1/3">
-        <h2>Corporate Design</h2>
-        <h3>Weil der erste Eindruck zählt und bleibt.</h3>
-        <p>
-          Ein unverwechselbares Design – das ist die Visiten- und
-          Eintrittskarte. Es macht Sie als Unternehmen und auch Person
-          einzigartig.
-        </p>
-      </div>
-      <div class="overflow-hidden md:px-3 md:w-1/3">
-        <h2>Verpackungs Design</h2>
-        <h3>Weil Verpackungen wie Geschenke wirken.</h3>
-        <p>
-          In ansprechenden, außergewöhnlichen, stilvollen, witzigen und
-          passenden Verpackungen liegt das Potential der raschen
-          Kaufentscheidung. Diese treffen Ihre KundInnen nämlich innerhalb
-          weniger Sekunden. Das Plus: Sie haben selbst die doppelte Freude an
-          Ihrem Produkt.
-        </p>
-      </div>
-      <div class="overflow-hidden md:px-3 md:w-1/3">
-        <h2>Katalog- & Broschürengestaltung</h2>
-
-        <h3>
-          Weil selbst im digitalen Zeitalter Kataloge und Broschüren unablässig
-          sind.
-        </h3>
-        <p>
-          Etwas aus Papier in der Hand zu halten, das hat für Kunden einen hohen
-          Wert. Auch in Zeiten des Internets informieren sie sich vor dem Kauf
-          gern mittels Print-Katalogen, Broschüren oder Flyern.
-        </p>
-      </div>
+          gern mittels Print-Katalogen, Broschüren oder Flyern."
+      />
+      <service-item
+        title="Magazingestaltung"
+        subtitle="CIRCE Vorarlberg"
+        text="Magazine erzählen Geschichten von Mode, Lifestyle, Society, Kunst und Design. Mit Hochglanzbildern, Texten und dem Layout wird das Magazin so aufgebaut, dass ein stimmiger Gesamteindruck entsteht, der die jeweilige Zielgruppe anspricht und abholt."
+      />
+      <service-item
+        title="Screen-Design"
+        subtitle="Digitalisierung"
+        text="Den Arm des Corporate Designs in die digitale Welt verlängern – die Markenwelt auf den unterschiedlichen Wiedergabegeräten zum Kunden bringen; das ist die Aufgabe des Screen-Designs."
+      />
+      <service-item
+        title="Geschäftsausstattungen"
+        subtitle="Drucksorten"
+        text="Ein überzeugendes Logo wirkt sowohl digital als auch analog. Wir bieten durchdachte Anwendungen auf den verschiedensten Drucksorten wie Briefpapier, Visitenkarten, Notizblöcke, u.v.m."
+      />
     </div>
   </div>
 </template>
 
 <script>
+import ServiceItem from '~/components/ServiceItem.vue'
+import TopElement from '~/components/Topelement.vue'
+
 export default {
+  components: {
+    ServiceItem,
+    TopElement
+  },
   head() {
     return {
       title: 'Welcome',

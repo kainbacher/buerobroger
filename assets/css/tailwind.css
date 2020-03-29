@@ -4,18 +4,11 @@
 /* purgecss end ignore */
 @import 'tailwindcss/utilities';
 
-h1 {
-    font-size: 24px;
+
+html {
+  @apply font-body
 }
 
-h2 {
-    font-size: 20px;
-}
-
-h3 {
-    font-size: 18px;
-}
-
-p {
-    font-size: 1.2em;
+.navigation .is-active {
+    color: theme('colors.green');
 }
