@@ -1,5 +1,5 @@
 <template>
-  <header class="container flex py-10 mx-auto">
+  <header class="container flex py-10 mx-auto items-center">
     <div class="w-1/3 flex justify-start navigation">
       <NLink
         to="/leistungen/"
@@ -42,7 +42,12 @@
         <rect x="11" y="16" width="10" height="2" rx="1" fill="#97CE40" />
       </svg>
     </div>
-    <mobile-nav v-show="mobileNavigationIsVisible" @close="toggleNavigation" />
+    <transition name="fade">
+      <mobile-nav
+        v-show="mobileNavigationIsVisible"
+        @close="toggleNavigation"
+      />
+    </transition>
   </header>
 </template>
 
@@ -75,3 +80,13 @@ export default {
   }
 }
 </script>
+
+<style lang="css">
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+</style>

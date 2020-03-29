@@ -7,7 +7,7 @@
       <div
         class="absolute h-full w-full top-0 flex justify-center items-center"
       >
-        <div class="w-3/4 lg:w-1/3 mx-auto">
+        <div class="w-11/12 sm:w-4/6 lg:w-1/3 mx-auto">
           <h1
             :class="['text-center text-sm lg:text-xl xl:text-2xl', textColor]"
           >

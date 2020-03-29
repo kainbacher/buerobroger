@@ -9,7 +9,7 @@
     <statement
       text="Wann ich meine Arbeit als Gestalterin als gelungen betrachte? Wenn ich von meinen KundInnen höre, dass sie es sich genau so vorgestellt haben."
     />
-    <project-list amount="8" />
+    <project-list :amount="8" />
   </main>
 </template>
 
